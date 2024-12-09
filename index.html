@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="ui">
+        <!-- Grupo de Controle: Velocidade -->
+        <div class="control-group">
+            <label for="speed-slider">Velocidade:</label>
+            <button id="speed-minus">-</button>
+            <input id="speed-slider" type="range" min="1" max="10" step="0.1" value="1">
+            <button id="speed-plus">+</button>
+        </div>
+
+        <!-- Grupo de Controle: Estrelas -->
+        <div class="control-group">
+            <label for="star-slider">Estrelas:</label>
+            <button id="star-minus">-</button>
+            <input id="star-slider" type="range" min="700" max="3000" step="100" value="700">
+            <button id="star-plus">+</button>
+        </div>
+
+        <!-- Grupo de Controle: Zoom -->
+        <div class="control-group">
+            <label for="zoom-slider">Zoom:</label>
+            <button id="zoom-minus">-</button>
+            <input id="zoom-slider" type="range" min="0" max="80" step="1" value="37">
+            <button id="zoom-plus">+</button>
+        </div>
+
+        <!-- Grupo de Controle: Altura -->
+        <div class="control-group">
+            <label for="height-slider">Altura:</label>
+            <button id="height-minus">-</button>
+            <input id="height-slider" type="range" min="0" max="30" step="1" value="15">
+            <button id="height-plus">+</button>
+        </div>
+
+        <!-- Botão Modo Realista -->
+        <div class="control-group">
+            <button id="realistic-mode">Modo Realista</button>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

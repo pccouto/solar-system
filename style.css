@@ -1,0 +1,79 @@
+/* Estilo geral do corpo */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Organização dos controlos */
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    max-width: 100%;
+    overflow-x: auto;
+    gap: 30px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#ui input[type="range"] {
+    width: 100px;
+    margin: 0 5px;
+}
+
+#ui label, #ui .value {
+    color: white;
+    font-size: 14px;
+}
+
+#ui button {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#ui button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#realistic-mode {
+    background-color: #333;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#realistic-mode.active {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #4caf50;
+}
+
+@media (max-width: 600px) {
+    #ui {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
